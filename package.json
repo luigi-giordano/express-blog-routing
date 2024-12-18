@@ -4,8 +4,8 @@
   "main": "posts.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node posts.js",
-    "dev": "node --watch posts.js"
+    "start": "node app.js",
+    "dev": "node --watch app.js"
   },
   "repository": {
     "type": "git",
