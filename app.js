@@ -7,7 +7,7 @@ const port = 3001;
 
 app.get('/', (req,res) => {
   res.send('server dei cibi')
-})
+});
 app.use('/posts', postsRouter);
 
 app.listen(port, () => {

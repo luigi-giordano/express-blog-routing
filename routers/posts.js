@@ -1,9 +1,10 @@
 const express = require('express');
 const router = express.Router();
+const posts = require('../posts');
 
 //index
 router.get('/', (req,res) =>{
-  res.send ('Lista dei cibi')
+  res.json (posts)
 })
 
 //show
