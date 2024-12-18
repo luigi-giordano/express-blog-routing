@@ -8,8 +8,11 @@ router.get('/', (req,res) =>{
 })
 
 //show
-router.get('/:id', (req,res) =>{
-  res.send (`Dettagli del cibo con id ${req.params.id}`)
+router.get('/:title', (req,res) =>{
+  const titolo = posts.find(post => {
+    return post.title === req.params.title
+  })
+  res.json (titolo)
 })
 
 //store
